@@ -1,0 +1,31 @@
+{
+  "name": "Language Bar",
+  "description": "Learn French Reading",
+  "version": "2.0",
+  "icons": { "16": "16.png", "48": "48.png", "128": "128.png" },
+  "permissions": [
+    "activeTab",
+    "*://*/*"
+
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*"],
+      "js": ["jquery-1.11.1.min.js", "fr_words.js", "myscript.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["jquery-1.11.1.min.js","fr_words.js", "background.js"],
+    "persistent": false,
+    "matches": [ "http://*/*", "https://*/*"]
+  },
+
+  "browser_action": {
+    "default_title": "Randomize French"
+  },
+
+  "manifest_version": 2
+
+}
