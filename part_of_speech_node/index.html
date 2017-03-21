@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Language Bar - PoS Example</title>
+
+	<!--SEO Meta Tags-->
+	<meta name="description" content="M-Store - Modern E-Commerce Template"/>
+	<meta name="keywords"
+	      content="shop, e-commerce, modern, minimalist style, responsive, online store, business, mobile, blog, bootstrap, html5, css3, jquery, js, gallery, slider, touch, creative, clean"/>
+	<meta name="author" content="Rokaux"/>
+
+	<!--Mobile Specific Meta Tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<meta name="referrer" content="never">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="../css/custom.css" rel="stylesheet" media="screen">
+
+
+	<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+	<script src="call-pos-server.js"></script>
+
+
+</head>
+<body>
+
+
+<br>
+
+<div class="page">
+
+	<div class="column-wrapper">
+		<div class="content-column" id="maincontenet">
+
+			<div class="content">
+				<div class="quick-results container">
+					<br><br>
+
+
+					<div class="form-group" style="margin-bottom: 8px;">
+						<label for="HookLine" style="margin-bottom: 0px;">Sentece <span style="color:#bbb; font-size: smaller;"></span></label>
+						<br>
+						<textarea class="form-control" id="sentence" placeholder="enter the genre of the book" style="height:60px !important;">The blue fish was a cool duck in the pound.</textarea>
+					</div>
+
+					<button type="submit" id="getposbtn" class="btn btn-primary">Get POS</button>
+
+					<div id="posresult"></div>
+
+				</div>
+			</div>
+
+
+			<div class="content">
+				<div class="quick-results container">
+					<br><br>
+					TAGS:
+					<pre><code>CC Coord Conjuncn           and,but,or
+CD Cardinal number          one,two
+DT Determiner               the,some
+EX Existential there        there
+FW Foreign Word             mon dieu
+IN Preposition              of,in,by
+JJ Adjective                big
+JJR Adj., comparative       bigger
+JJS Adj., superlative       biggest
+LS List item marker         1,One
+MD Modal                    can,should
+NN Noun, sing. or mass      dog
+NNP Proper noun, sing.      Edinburgh
+NNPS Proper noun, plural    Smiths
+NNS Noun, plural            dogs
+POS Possessive ending       Õs
+PDT Predeterminer           all, both
+PP$ Possessive pronoun      my,oneÕs
+PRP Personal pronoun         I,you,she
+RB Adverb                   quickly
+RBR Adverb, comparative     faster
+RBS Adverb, superlative     fastest
+RP Particle                 up,off
+SYM Symbol                  +,%,&amp;
+TO ÒtoÓ                     to
+UH Interjection             oh, oops
+URL url                     http://www.google.com/
+VB verb, base form          eat
+VBD verb, past tense        ate
+VBG verb, gerund            eating
+VBN verb, past part         eaten
+VBP Verb, present           eat
+VBZ Verb, present           eats
+WDT Wh-determiner           which,that
+WP Wh pronoun               who,what
+WP$ Possessive-Wh           whose
+WRB Wh-adverb               how,where
+, Comma                     ,
+. Sent-final punct          . ! ?
+: Mid-sent punct.           : ; Ñ
+$ Dollar sign               $
+# Pound sign                #
+" quote                     "
+( Left paren                (
+) Right paren               )
+</code></pre>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
